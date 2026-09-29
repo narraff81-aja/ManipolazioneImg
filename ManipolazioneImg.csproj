@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove=".Gemini\**" />
+    <Compile Remove=".manojpandey\**" />
+    <Compile Remove=".UweKeim\**" />
+    <EmbeddedResource Remove=".Gemini\**" />
+    <EmbeddedResource Remove=".manojpandey\**" />
+    <EmbeddedResource Remove=".UweKeim\**" />
+    <None Remove=".Gemini\**" />
+    <None Remove=".manojpandey\**" />
+    <None Remove=".UweKeim\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="4.1.2" />
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="3.1.2" />
+    <PackageReference Include="SkiaSharp" Version="4.152.1" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Win32" Version="4.152.1" />
+  </ItemGroup>
+
+</Project>
